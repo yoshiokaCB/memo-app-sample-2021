@@ -43,8 +43,7 @@ export default function MemoListScreen(props) {
         });
         setMemos(userMemos);
         setIsLoading(false);
-      }, (error) => {
-        console.log(error);
+      }, () => {
         setIsLoading(false);
         Alert.alert('データの読み込みに失敗しました。');
       });
